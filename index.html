@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แจ้งไซต์เสื้อ กีฬาสี สำนักงานเขตพญาไท</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Sarabun', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #daeaff 0%, #f1dfff 50%, #ffdcf0 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+        }
+
+        /* ส่วนหัวข้อ */
+        .header-card {
+            background-color: rgba(255, 255, 255, 0.9);
+            width: 100%;
+            max-width: 800px;
+            padding: 30px 20px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: #2d3436;
+            font-size: 26px;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        .sub-title {
+            color: #636e72;
+            font-size: 15px;
+        }
+
+        /* คอนเทนเนอร์ปุ่ม */
+        .button-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 15px;
+            width: 100%;
+            max-width: 800px;
+            margin-bottom: 30px;
+        }
+
+        .btn-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px;
+            border-radius: 12px;
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .btn-link:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+            filter: brightness(1.1);
+        }
+
+        .color-blue { background: linear-gradient(135deg, #3498db, #2980b9); }
+        .color-purple { background: linear-gradient(135deg, #9b59b6, #8e44ad); }
+        .color-green { background: linear-gradient(135deg, #2ecc71, #27ae60); }
+        .color-red { background: linear-gradient(135deg, #e74c3c, #c0392b); }
+
+        /* ส่วนตารางขนาดเสื้อ */
+        .table-container {
+            background-color: white;
+            width: 100%;
+            max-width: 800px;
+            padding: 25px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+        }
+
+        .table-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #2d3436;
+            margin-bottom: 15px;
+            border-left: 5px solid #6c5ce7;
+            padding-left: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        th {
+            background-color: #f8f9fa;
+            color: #636e72;
+            font-weight: bold;
+            text-align: center;
+            padding: 12px;
+            border-bottom: 2px solid #edf2f7;
+        }
+
+        td {
+            padding: 12px;
+            text-align: center;
+            border-bottom: 1px solid #edf2f7;
+            color: #2d3436;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        tr:nth-child(even) {
+            background-color: #fafbfc;
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 20px; }
+            .button-grid { grid-template-columns: 1fr 1fr; }
+            th, td { padding: 8px; font-size: 14px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header-card">
+        <h1>แจ้งไซต์เสื้อ กีฬาสี<br>สำนักงานเขตพญาไท พ.ศ. 2569</h1>
+        <p class="sub-title">กรุณาเลือกสีของคุณเพื่อกรอกข้อมูล</p>
+    </div>
+
+    <div class="button-grid">
+        <a href="https://docs.google.com/spreadsheets/d/16qKTnWAESosJVN_0PJJ_Yu5XkcgokV6GUnusOX0YwzA/edit?usp=sharing" target="_blank" class="btn-link color-blue">สีฟ้า</a>
+        <a href="https://docs.google.com/spreadsheets/d/1LAabX7rta1K-8m2dXI1B22r_2Slg5aM2rm-b4A6RIvA/edit?usp=sharing" target="_blank" class="btn-link color-purple">สีม่วง</a>
+        <a href="https://docs.google.com/spreadsheets/d/1b2rRMX88SK4jmYKbUcY0MROrmFKpk7q-r6juPt0CgZ8/edit?usp=sharing" target="_blank" class="btn-link color-green">สีเขียว</a>
+        <a href="https://docs.google.com/spreadsheets/d/1VJ9Yzb0spp0hwsmm181Pcp-ANrIJBKl5gSwk_5uMmnw/edit?usp=sharing" target="_blank" class="btn-link color-red">สีแดง</a>
+    </div>
+
+    <div class="table-container">
+        <div class="table-title">ตารางขนาด</div>
+        <table>
+            <thead>
+                <tr>
+                    <th>ขนาด/Size</th>
+                    <th>รอบอก/Chest (นิ้ว/Inc.)</th>
+                    <th>ความยาว/Length (นิ้ว/Inc.)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>S</td>
+                    <td>37</td>
+                    <td>26</td>
+                </tr>
+                <tr>
+                    <td>M</td>
+                    <td>39</td>
+                    <td>27</td>
+                </tr>
+                <tr>
+                    <td>L</td>
+                    <td>41</td>
+                    <td>28</td>
+                </tr>
+                <tr>
+                    <td>XL</td>
+                    <td>43</td>
+                    <td>29</td>
+                </tr>
+                <tr>
+                    <td>2XL</td>
+                    <td>45</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <td>3XL</td>
+                    <td>47</td>
+                    <td>30.5</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
